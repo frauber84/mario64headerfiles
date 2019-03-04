@@ -1,0 +1,143 @@
+/* Mario actions (Thanks to RomanianGirl for this list)
+
+0x0C401301: Peach Introduction
+
+0x20001305: intro message?
+0x20001306: Lakit camera at bridge
+0x0C400201: Normal
+0x0C400202: Pat back, yawn tired, going to sleep
+0x0C000203: Sleeping, laying on back
+0x0C000204: Wake up (verify)
+0x0C400205: Weak Mario
+0x0C40020B: Cold Mario
+0x0002033A: Stuck in snow (Top half in snow)
+0x0002033C: Stuck in snow (bottom half in snow)
+0x0C008220: Duck
+0x04008448: Crawl
+0x0C008224: Getting up
+0x08000206: carry small (?)
+0x08000207: pick up thing
+0x00000383: Pick up thing
+0x08000208: Carry large thing
+0x80000589: Throw large thing
+0x00000387: Set thing (penguin) down gentle
+0x0000132F: Open door with star
+0x00001300: In painting (?)
+0x00001325: Enter level (?)
+0x00001904: Get star
+0x00001302: Peace sign after star
+0x00001327: Hold cap brush face (after star)
+0x00001928: Out of painting when die
+0x00020460: Out of level when lose
+0x00001336: Using warp
+0x00001336: Arrive at destination of warp
+0x00800380: Attacking (in general?)
+0x20810446: Riding a shell
+0x0C400209: Standing against wall
+0x04000440: Sneaking against wall
+0x08100340: In tree
+0x00100342: Grab onto tree
+0x00100343: Climb tree up (if activated on ground, immediate death)
+0x00100344: Prepare handstand on tree
+0x00100345: Handstand in tree already
+0x0300088D: Jump from tree
+0x04000471: about to land (?)
+0x08100340: Mario holding on pole
+0x00100343: Climb up pole
+0x000004A8: Holding onto hoot's foot
+0x00200349: Holding on bar above
+0x0020054A: moving across bars
+0x00001371: In cannon (if on ground and press a, he will launch! caution: Glitches easily)
+0x00880898: Flying, shot out of Cannon
+0x00880456: Sliding
+0x20001305: Happens after unlocking door with stars
+0x20001306: Talking to something
+0x00001308: Reading sign
+0x0000133D: Put on cap
+0x10880899: Flying
+0x010208B0: Hit wall
+0x00001321: Open door
+0x0800034B: hanging of ledge
+0x0000054C: Climb up slow
+0x0000054F: Climb up fast
+0x00840452: Sitting
+0x008C0453: Sliding forward
+0x00020467: From after dying (Mario: mama mia!)
+
+Hurt stuff (on land):
+
+0x00020462: Hurt by something
+0x00020464: Mario hit (no damage)
+0x00020465: Hurt by enemy
+0x00020338: Shocked
+0x00000479: Fall from high up, crushed
+0x00020460: Fall from extreme height
+0x00021311: Fall from high jump (standing to sit)
+0x00020449: Burning
+0x010208B7: Jumping from Lava
+0x00021312: Sinking in quicksand to die
+0x010208B7: Mario pushed off ledge
+
+Jumping stuff:
+
+0x03000880: Single Jump
+0x03000881: Double Jump
+0x01000882: Triple Jump
+0x018008AC: Kick in air
+0x108008A4: Spin in air
+0x18800238: land from spin
+0x0C000230: Land on ground
+0x04000472: Land on ground 2
+0x04000478: Land on ground 3
+0x0800023A: Landed on ground (Mario will not say aha)
+0x030008AF: Triple jump (with sparkles after Yoshi)
+0x0C000232: land from it
+0x01000887: cartwheel in air
+0x04000473: Land on ground
+0x01000883: Backflip
+0x0800022F: Land
+0x008008A9: Stomp in air
+0x0080023C: Land, stars form out
+0x0C00023E: Get up
+0x03000888: Long jump (seems to force land sequence)
+0x0800023B: Recover from long jump
+0x04000440: Run/run/movement? (will not force run animation?)
+0x0C00023D: Slide to stop
+0x0188088A: Jump launch
+0x00880456: Sliding on ground
+0x010208B6: Hit wall
+0x00000386: Getting up
+
+Water stuff
+
+0x380022C0: Floating in water
+0x380022C1: arms together (hold something in water)
+0x300022C2: swimming (floating to surface?)
+0x300024E0: Throw something in water
+0x300024D6: Using shell under water
+0x300024E1: Grab/hit something in water
+0x300024D1: Breast stroke in water
+0x300024D2: Swimming with kicking legs
+0x01000889: Jump out of swim water
+0x0400044A: Water exit to air/land
+0x300222C5: Hurt by something under water
+0x300032C4: Drowning
+0x00001303: Get star underwater
+
+Bowser stuff:
+
+0x00000390: Grab bowser by tail
+0x00000391: Hold bowser by tail
+0x00000392: Throw bowser
+0x00001302: Get key (win)
+0x0000192B: Jump (after win?)
+0x00001327: Take key out, throw in air catch (this also animates when Mario wins without a hat)
+0x00020226 - Mario hop (Bowser jumps on platform)
+
+Credits stuff: (note: * = ONLY outside castle)
+
+0x0000131A - Mario waving*
+0x00001909 - Mario flies to castle to meet peach
+0x00001918 - End sequence when Mario rescues Peach* 
+
+*/

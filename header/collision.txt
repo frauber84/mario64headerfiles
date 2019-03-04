@@ -1,0 +1,68 @@
+List of known collision commands
+
+
+Compiled from VL-Tone and rstewart215804 notes with some minor additions by me:
+
+0000: Normal (Slippery in Slide levels, when cmd 0x31=0006)
+0001: Lethal ice/ Lava
+0005: Mario can hang from the ceiling
+000A: Bottom of level (death)
+
+[ 000D = ???? ]
+
+000E: Water currents (8 bytes per tri) the two last bytes of each triangle defines direction and force of current
+0012: Falling in void (Haunted House)
+0013: Very slippery hill
+0014: Slippery hill
+0015: Climbable hills
+001B: Switches to area 1 (Used in Wet/Dry World)
+001C: Switches to area 2 (Used in Wet/Dry World and Tall Tall slide to seemingly switch between areas)
+001D: Switches to area 3 (Used in Tall Tall slide to seemingly switch between areas)
+001E: Switches to area 4 (Used in Tall Tall slide to seemingly switch between areas)
+0023: Quicksand
+0024: Moving sand 1
+0025: Moving sand 2
+0026: Moving sand 3
+[ 0027 = Another moving sand + quicksand ]
+0028: Wall/fence
+0029: Grass/flat
+002A: Un-climbable hill
+002C: Wind
+[ 002D = moving sand (death) ]
+0030: Flat
+
+[ 0032 = Same as death in bottom?? ]
+
+0033: Starting line in Princess Secret Slide
+0034: Finish line in Princess Secret Slide
+0036: snowy ice stuff
+0037: snowy ice stuff
+
+[ 0038 = Death at bottom with wind ]
+
+002E: Icy
+0041: NOP
+0042: End Collision Data
+0043: Special objects
+0065: Top of Bob Omb Battlefield mountain wide angle camera ]only works in Bob-omb Battlefield?]
+0066: Walls Tiny Huge Island area 3
+006F: Camera turn in Bowser Course 1
+0070: Camera turns in BoB
+[ 0072 = Inacessible area (bounds?) ]
+0075: Camera stuff Cool Cool Mountain
+0079: Flat non-slippery floor in Princess Secret Slide
+007B: Vanishing walls. (non-solid when Mario wears the Vanish cap)
+00FD: Pool Warp in Hazy Maze Cave
+00A6-00Cx: Painting warps areas (in front)
+00D0: Limited camera movements in narrow hallways (part of Hazy Maze Cave)
+00D3-00F8: Painting warps areas (behind)
+
+from rstewart215804:
+
+Some collision data has 8 bytes per triangle instead of 6. The extra 2 bytes supply more per face settings. Terrain types 0x0024, 0x000E, and
+0x002C are the most common ones that have extra 2 bytes
+
+
+Terrain type 0x0024 is one of the moving sands. The extra 2 bytes tell which direction to push Mario in.
+Terrain type 0x000E only works in water. It creates water currents that push Mario while swimming.
+Terrain type 0x002C causes horizontal wind and its direction is controlled by the last two bytes.
